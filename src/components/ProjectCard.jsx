@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectCard = ({ title, description, tags, path }) => {
     return (
         <div className="border-2 border-[#A000FF] p-6 mb-5 rounded-md shadow-md text-left flex">
-            <img src={path} alt='Project Image' className="mb-4 max-h-fit min-h-[40vh]" />
+            <img src={path} alt='Project Image' className="mb-4 object-scale-down w-[25vw] max-h-[40vh]" />
             <div className='p-6'>
                 <h3 className="text-4xl font-medium mb-4 font-[Poppins] ">{title}</h3>
                 <p className="text-xl mb-4">

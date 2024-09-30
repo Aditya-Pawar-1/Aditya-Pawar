@@ -4,28 +4,28 @@ import ProjectCard from './ProjectCard';
 const Project = () => {
   const projects = [
     {
-      title: 'Project Portal 1',
+      title: 'Project Portal',
       description: 'The College Project Submission System provides a comprehensive solution by offering a centralized, secure, and user-friendly platform for students, teachers, and administrators for academic project management.',
-      tags: ['react', 'Express', 'mongoDB', 'Nodejs', 'javascript', 'tailwind'],
-      path: 'P1.png'
+      tags: ['React', 'Express', 'MongoDB', 'Nodejs', 'JavaScript', 'Tailwind'],
+      path: 'Project_Portal.png'
     },
     {
-      title: 'Project Portal 2',
-      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime unde magnam eius, atque assumenda aperiam quam nesciunt, eveniet reiciendis reprehenderit, magni rem! Natus laborum, sint neque unde quos mollitia odio incidunt distinctio eveniet dolorum veritatis?',
+      title: 'Heaven Homes',
+      description: 'A UI/UX case study focused on designing an intuitive real estate platform that enhances the user experience for property buyers, sellers, and renters. It explores the creation of an engaging interface with advanced search filters, detailed property views, and interactive features, aiming for a seamless and efficient user journey.',
 
-      tags: ['react', 'Express', 'mongoDB', 'Nodejs', 'javascript', 'tailwind'],
-      path: 'P1.png'
+      tags: ['Figma', 'UI/UX Design', 'Design Research', 'Web Design'],
+      path: 'Heaven_Homes.png'
     },
     {
       title: 'Project Portal 3',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quae beatae, dicta adipisci tempore quia sequi optio perspiciatis corrupti provident nulla ea ullam fugit molestiae sapiente nisi alias architecto, quibusdam culpa deleniti similique ab officiis odio fugiat. Autem accusamus cumque pariatur, fugiat, fuga ipsa recusandae nihil reprehenderit, perferendis neque consequatur?',  
-      tags: ['react', 'Express', 'mongoDB', 'Nodejs', 'javascript', 'tailwind'],
-      path: 'P1.png'
+      description: 'In my First year developed a website addressing the Lost and Found needs of the college community. Created a user-friendly interface to facilitate the reporting and retrieval of lost items, enhancing campus efficiency. Utilized HTML and CSS for the frontend, with Google Forms for backend functionality to enable seamless data capture and communication. Ensured optimal accessibility across devices for better user convenience and adoption.',  
+      tags: ['HTML', 'JavaScript', 'CSS'],
+      path: 'LostAndFound.png'
     }
   ];
 
   return (
-    <div className='mx-32 my-20'>
+    <div data-scroll data-scroll-speed="0.4" className='mx-32 my-20'>
       {projects.map((data, index) => (
         <ProjectCard key={index} {...data} />
       ))}
