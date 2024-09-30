@@ -19,9 +19,11 @@ const Home = () => {
                 <Hero />
                 <Project />
                 <Contact />
-
             </div>
-        </div>
+            <footer className={`flex items-center justify-center ${theme === 'dark' ? 'text-neutral-50' : 'text-neutral-950'}`} >
+                <h3>This Website is created by Aditya Pawar ©️ 2024</h3>
+        </footer>
+        </div >
     )
 };
 

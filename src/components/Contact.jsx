@@ -15,7 +15,7 @@ const handleClick = (p) => {
 
 const Contact = () => {
     return (
-        <div data-scroll data-scroll-speed="0.2" className='grid grid-cols-3 mx-48 gap-4 text-neutral-900'>
+        <div data-scroll data-scroll-speed="0.4" className='grid grid-cols-3 mx-48 gap-4 text-neutral-900'>
             <div className='bg-[#0077FF] pt-12 pl-6 rounded-xl h-[30vh] hover:scale-105 duration-[1s] transition ease-in-out '>
                 <h3 className='font-semibold font-[Poppins] text-5xl text-neutral-50'>Web Developer</h3>
             </div>

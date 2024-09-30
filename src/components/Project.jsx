@@ -17,7 +17,7 @@ const Project = () => {
       path: 'Heaven_Homes.png'
     },
     {
-      title: 'Project Portal 3',
+      title: 'Lost & Found',
       description: 'In my First year developed a website addressing the Lost and Found needs of the college community. Created a user-friendly interface to facilitate the reporting and retrieval of lost items, enhancing campus efficiency. Utilized HTML and CSS for the frontend, with Google Forms for backend functionality to enable seamless data capture and communication. Ensured optimal accessibility across devices for better user convenience and adoption.',  
       tags: ['HTML', 'JavaScript', 'CSS'],
       path: 'LostAndFound.png'
@@ -25,7 +25,7 @@ const Project = () => {
   ];
 
   return (
-    <div data-scroll data-scroll-speed="0.4" className='mx-32 my-20'>
+    <div data-scroll data-scroll-speed="0.2" className='mx-32 my-8'>
       {projects.map((data, index) => (
         <ProjectCard key={index} {...data} />
       ))}
