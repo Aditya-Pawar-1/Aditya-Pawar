@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Project from './components/Project';
-import Contact from './components/contact';
+import Contact from './components/Contact';
 
 const Portfolio = () => {
 
