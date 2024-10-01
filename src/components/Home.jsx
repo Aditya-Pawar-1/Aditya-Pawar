@@ -20,8 +20,8 @@ const Home = () => {
                 <Project />
                 <Contact />
             </div>
-            <footer className={`flex items-center justify-center ${theme === 'dark' ? 'text-neutral-50' : 'text-neutral-950'}`} >
-                <h3>This Website is created by Aditya Pawar ©️ 2024</h3>
+            <footer className={`h-[15vh] flex items-center justify-center ${theme === 'dark' ? 'bg-[#0A0A0A] text-neutral-50' : 'bg-[#F3F3FF] text-neutral-950'}`} >
+                <h3 className='text-lg p-2 mb-4'>Website created by Aditya Pawar © 2024.</h3>
         </footer>
         </div >
     )

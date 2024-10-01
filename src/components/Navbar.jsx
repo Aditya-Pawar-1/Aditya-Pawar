@@ -11,7 +11,7 @@ const Navbar = ({ toggleTheme, theme }) => {
     return (
         <nav className="flex justify-between items-center mb-16 mx-14">
             <img className='w-12' src="Logo.svg" alt="Logo" />
-            <div className="flex items-center gap-8 font-[Poppins] font-semibold text-lg">
+            <div className="flex items-center gap-8 font-Poppins font-semibold text-lg">
                 <a href="/">Home</a>
                 <a href="/">Project</a>
                 <a href="/">Contact</a>

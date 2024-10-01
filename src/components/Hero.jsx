@@ -6,10 +6,10 @@ const Hero = () => {
         
         <div id='hero-section' className="relative min-h-[80vh] max-w-[100vw] overflow-x-clip">
             <div className="my-12  mx-14 flex flex-col items-start justify-center w-[45vw] h-full absolute">
-                <h1 className="text-2xl font-light font-[Helvetica] mb-4">
+                <h1 className="text-2xl font-light font-Helvetica mb-4">
                     Hi, I'm Aditya Pawar
                 </h1>
-                <h2 className="text-4xl font-bold font-[Poppins] mb-6">
+                <h2 className="text-4xl font-bold font-Poppins mb-6">
                     Transforming ideas into interactive web experiences.
                 </h2>
                 <p className="text-xl font-normal mb-12">
