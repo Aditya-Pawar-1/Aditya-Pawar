@@ -15,7 +15,7 @@ const handleClick = (p) => {
 
 const Contact = () => {
     return (
-        <div id='contact-section' data-scroll data-scroll-speed="0.4" className='grid grid-cols-3 mx-4 md:mx-12 lg:mx-14 xl:m-10 gap-4 text-neutral-900 select-none '>
+        <div id='contact-section' data-scroll data-scroll-speed="0.4" className='grid grid-cols-3 mx-4 md:mx-12 lg:mx-14 xl:m-32 gap-4 text-neutral-900 select-none '>
 
             <div className='bg-[#0077FF] pt-10 md:pt-12 pl-2 md:pl-6 rounded-xl h-[20vh] md:h-[25vh] lg:h-[30vh] hover:scale-105 duration-[1s] transition ease-in-out hidden md:block'>
                 <h3 className='font-semibold font-Poppins text-xl md:text-3xl lg:text-5xl text-neutral-50'>Web <br /> Developer</h3>
