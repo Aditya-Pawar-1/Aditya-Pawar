@@ -25,7 +25,7 @@ const Project = () => {
   ];
 
   return (
-    <div data-scroll data-scroll-speed="0.2" className='mx-32 my-8'>
+    <div id='project-section' data-scroll data-scroll-speed="0.2" className='mx-4 md:mx-16 lg:mx-32 xl:mx-16 my-4 md:my-8'>
       {projects.map((data, index) => (
         <ProjectCard key={index} {...data} />
       ))}

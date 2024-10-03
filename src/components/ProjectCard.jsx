@@ -2,11 +2,11 @@ import React from 'react';
 
 const ProjectCard = ({ title, description, tags, path }) => {
     return (
-        <div className="border-2 border-[#A000FF] p-6 mb-5 rounded-md shadow-md text-left flex">
-            <img src={path} alt='Project Image' className="mb-4 object-fill w-[25vw] max-h-[40vh]" />
+        <div className="border-2 border-[#A000FF] p-6 mb-5 rounded-md shadow-md text-left flex lg:flex-row flex-col select-none">
+            <img src={path} alt='Project Image' className="mb-4 object-fill lg:w-[25vw] xl:w-[35vw] max-h-[40vh]" />
             <div className='p-6'>
-                <h3 className="text-4xl font-medium mb-4 font-Poppins ">{title}</h3>
-                <p className="text-xl mb-4">
+                <h3 className="text-2xl md:text-4xl font-medium mb-4 font-Poppins w-[75%] ">{title}</h3>
+                <p className="text-base md:text-lg mb-4 w-[95%] lg:w-[85%] ">
                     {description}
                 </p>
                 <div className="flex gap-2 flex-wrap">
