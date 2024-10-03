@@ -18,14 +18,14 @@ const Project = () => {
     },
     {
       title: 'Lost & Found',
-      description: 'In my First year developed a website addressing the Lost and Found needs of the college community. Created a user-friendly interface to facilitate the reporting and retrieval of lost items, enhancing campus efficiency. Utilized HTML and CSS for the frontend, with Google Forms for backend functionality to enable seamless data capture and communication. Ensured optimal accessibility across devices for better user convenience and adoption.',  
+      description: 'In my First year developed a website addressing the Lost and Found needs of the college community. Created a user-friendly interface to facilitate the reporting and retrieval of lost items, enhancing campus efficiency. Utilized HTML and CSS for the frontend, with Google Forms for backend functionality to enable seamless data capture and communication.',  
       tags: ['HTML', 'JavaScript', 'CSS'],
       path: 'LostAndFound.png'
     }
   ];
 
   return (
-    <div id='project-section' data-scroll data-scroll-speed="0.2" className='mx-4 md:mx-16 lg:mx-32 xl:mx-16 my-4 md:my-8'>
+    <div id='project-section' data-scroll data-scroll-speed="0.2" className='mx-2 md:mx-16 lg:mx-32 xl:mx-24 my-4 md:my-8'>
       {projects.map((data, index) => (
         <ProjectCard key={index} {...data} />
       ))}

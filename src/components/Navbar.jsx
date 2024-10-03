@@ -10,12 +10,13 @@ const Navbar = ({ toggleTheme, theme }) => {
     return (
         <nav className="flex justify-between items-center mb-16 md:mx-14">
             <img className='w-12' src="Logo.svg" alt="Logo" />
-            <div className="flex items-center gap-8 font-Poppins font-semibold text-lg">
+            <div className="flex items-center gap-4 md:gap-8 font-Poppins font-semibold text-lg">
                 <div className='hidden lg:block space-x-8'>
                     <a href="/">Home</a>
                     <a href="#project-section">Project</a>
                     <a href="#contact-section">Contact</a>
                 </div>
+                
                 <button onClick={toggleTheme} className={`w-12 h-12 flex items-center justify-center border rounded-full border-none text-white bg-gradient-to-r from-[#8E05C2] to-[#CD50FD]`}>
                     {theme === 'dark' ? <BsSun size={"1.3em"} /> : <FaMoon size={"1.3em"} />}
                 </button>
