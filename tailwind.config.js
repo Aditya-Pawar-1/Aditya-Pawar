@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         Helvetica: "Helvetica",
         Poppins: "Poppins",
+        JuliusSansOne: "JuliusSansOne",
       },
     },
   },
