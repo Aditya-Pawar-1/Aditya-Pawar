@@ -4,7 +4,7 @@ import Spline from '@splinetool/react-spline';
 const Hero = ({ theme }) => {
     return (
 
-        <div id='hero-section' className="relative mt-48 sm:m-0 min-h-[30vh] md:min-h-[60vh] xl:min-h-screen max-w-[100vw] overflow-x-clip">
+        <div id='hero-section' className="relative pt-48 sm:m-0 min-h-[30vh] md:min-h-[60vh] xl:min-h-screen max-w-[100vw] overflow-x-clip">
             <div className="ml-4 md:ml-20 lg:my-12 lg:mx-14 flex flex-col items-start justify-end lg:justify-center w-[75vw] lg:w-[45vw] h-[80%] md:h-[90%] md:absolute select-none">
                 <h1 className="text-xl md:text-2xl font-light font-Helvetica mb-4">
                     Hi, I'm Aditya Pawar

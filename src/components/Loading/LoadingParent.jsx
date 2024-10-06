@@ -18,7 +18,7 @@ const LoadingParent = () => {
   })
 
   return (
-    <div ref={parentRef} className='w-full h-full overflow-clip bg-black z-50 fixed'>
+    <div ref={parentRef} className='w-full h-full overflow-clip bg-black z-[999] fixed'>
       <LoadingChild />
     </div>
   )

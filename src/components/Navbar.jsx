@@ -32,7 +32,7 @@ const Navbar = ({ toggleTheme, theme }) => {
     };
 
     return (
-        <nav className={`w-full max-w-screen-2xl mx-auto z-[999] fixed top-0 left-0 px-2 pt-6 pb-2 lg:static ${theme === 'dark' ? 'bg-[#0A0A0A] text-neutral-50' : 'bg-[#F3F3FF] text-neutral-950'}`}>
+        <nav className={`w-full max-w-screen-2xl mx-auto z-[99] fixed top-0 left-0 px-2 pt-6 pb-2 lg:static ${theme === 'dark' ? 'bg-[#0A0A0A] text-neutral-50' : 'bg-[#F3F3FF] text-neutral-950'}`}>
             <div className="flex justify-between items-center md:mx-14 lg:mb-16 ">
                 <img className='w-12' src="Logo.svg" alt="Logo" />
                 <div className="flex items-center gap-4 md:gap-8 font-Poppins font-semibold text-lg">
