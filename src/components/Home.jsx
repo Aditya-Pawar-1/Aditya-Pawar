@@ -13,7 +13,7 @@ const Home = () => {
     };
 
     return (
-        <div className={`${theme} h-full max-w-screen-2xl mx-auto overflow-clip transition-colors duration-500 ease-in-out `}>
+        <div className={`${theme} h-full max-w-screen-2xl mx-auto overflow-hidden transition-colors duration-500 ease-in-out `}>
             <div id='home' className={`${theme === 'dark' ? 'bg-[#0A0A0A] text-neutral-50' : 'bg-[#F3F3FF] text-neutral-950'}`}>
                 <Navbar toggleTheme={toggleTheme} theme={theme} />
                 <Hero theme={theme} />
