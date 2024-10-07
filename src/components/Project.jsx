@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ProjectCard from './ProjectCard';
 import Pageheading from './Pageheading';
+import { useTheme } from '../Context/ThemeContext';
 
-const Project = ({ theme }) => {
+
+const Project = () => {
+
+  const { theme } = useTheme();
+  
   const projects = [
     {
       title: 'Project Portal',
@@ -31,9 +36,9 @@ const Project = ({ theme }) => {
   return (
     <div id='project-section' className='overflow-x-clip'>
       <div>
-      <Pageheading title={"Projects"} t1={"Design"} t2={"Development"} theme={theme} />
+        <Pageheading title={"Projects"} t1={"Design"} t2={"Development"} theme={theme} />
       </div>
-      
+
       <div data-scroll data-scroll-speed="0.2" className='mx-2 md:mx-16 lg:mx-32 xl:mx-24 my-4'>
         {projects.map((data, index) => (
           <ProjectCard key={index} {...data} />

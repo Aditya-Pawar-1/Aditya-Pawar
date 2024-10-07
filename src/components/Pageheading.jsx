@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { GoNorthStar } from "react-icons/go";
+import { useTheme } from '../Context/ThemeContext';
 
-const Pageheading = ({ title, t1, t2, theme }) => {
+
+const Pageheading = ({ title, t1, t2 }) => {
+
+    const { theme } = useTheme();
+
     return (
         <>
             <div className="container hidden md:block ">

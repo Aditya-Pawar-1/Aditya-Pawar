@@ -1,10 +1,19 @@
-import React, { useRef } from 'react';
+import React, { useRef, useContext } from 'react';
 import { BsSun } from "react-icons/bs";
 import { FaMoon } from "react-icons/fa";
 import { IoMenuSharp, IoClose } from "react-icons/io5";
 import gsap from 'gsap';
+import { useTheme} from '../Context/ThemeContext';
 
-const Navbar = ({ toggleTheme, theme }) => {
+
+const Navbar = () => {
+
+    const { theme, setTheme } =  useTheme();
+
+    const toggleTheme = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
+    };
+
     const MenuPageref = useRef(null);
 
     const handleOpen = () => {
@@ -38,11 +47,11 @@ const Navbar = ({ toggleTheme, theme }) => {
                 <div className="flex items-center gap-4 md:gap-8 font-Poppins font-semibold text-lg">
                     <div className='hidden lg:block space-x-8'>
                         <a href="/">Home</a>
-                        <a href="#project-section">Project</a>
-                        <a href="#contact-section">Contact</a>
+                        <a href="/projects">Project</a>
+                        <a href="/contact">Contact</a>
                     </div>
 
-                    <button onClick={toggleTheme} className={`w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center border rounded-full border-none text-white bg-gradient-to-r from-[#8E05C2] to-[#CD50FD]`}>
+                    <button onClick={()=>toggleTheme()} className={`w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center border rounded-full border-none text-white bg-gradient-to-r from-[#8E05C2] to-[#CD50FD]`}>
                         {theme === 'dark' ? <BsSun size={"1.3em"} /> : <FaMoon size={"1.3em"} />}
                     </button>
 
@@ -57,16 +66,16 @@ const Navbar = ({ toggleTheme, theme }) => {
             </div>
 
             <div ref={MenuPageref} className={`h-screen w-screen top-0 right-[-100%] fixed lg:hidden ${theme === 'dark' ? 'bg-[#0A0A0A] text-neutral-50' : 'bg-[#F3F3FF] text-neutral-950'}`}>
-                <button onClick={handleClose} className='absolute top-10 right-12 text-4xl'>
+                <button onClick={handleClose} className='absolute top-10 right-5 text-4xl'>
                     <IoClose />
                 </button>
 
                 <div className="h-full container flex flex-col items-center my-24">
                     <img className='w-24' src="Logo.svg" alt="Logo" />
-                    <div className='space-y-4 items-center flex flex-col mt-24'>
+                    <div onClick={handleClose} className='space-y-4 items-center flex flex-col mt-24'>
                         <a href="/">Home</a>
-                        <a href="#project-section">Project</a>
-                        <a href="#contact-section">Contact</a>
+                        <a href="/projects">Project</a>
+                        <a href="/contact">Contact</a>
                     </div>
                     <button onClick={handleResume} className="bg-gradient-to-r from-[#8E05C2] to-[#CD50FD] text-white text-base font-medium lg:font-semibold px-4 py-2 rounded mt-12">
                         Resume

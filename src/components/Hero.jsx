@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Spline from '@splinetool/react-spline';
+import { useTheme} from '../Context/ThemeContext';
 
-const Hero = ({ theme }) => {
+const Hero = () => {
+
+    const { theme } = useTheme();
+    
     return (
-
-        <div id='hero-section' className="relative pt-48 sm:m-0 min-h-[30vh] md:min-h-[60vh] xl:min-h-screen max-w-[100vw] overflow-x-clip">
-            <div className="ml-4 md:ml-20 lg:my-12 lg:mx-14 flex flex-col items-start justify-end lg:justify-center w-[75vw] lg:w-[45vw] h-[80%] md:h-[90%] md:absolute select-none">
-                <h1 className="text-xl md:text-2xl font-light font-Helvetica mb-4">
+        <div id='hero-section' className="relative pt-48 lg:pt-4 sm:m-0 min-h-[30vh] md:min-h-[60vh] lg:min-h-screen max-w-[100vw] overflow-x-clip">
+            <div className="ml-4 md:ml-20 lg:my-12 lg:mx-14 flex flex-col items-start justify-end lg:justify-center w-[75vw] h-[80%] lg:w-[45vw] lg:absolute select-none">
+                <h1 className="text-xl md:text-2xl font-light font-Helvetica mb-2">
                     Hi, I'm Aditya Pawar
                 </h1>
-                <h2 className={`text-2xl md:text-4xl lg:text-6xl font-bold font-Poppins ${theme === 'dark'? 'text-neutral-200': 'text-neutral-80000'} mb-6`}>
+                <h2 className={`text-2xl md:text-4xl lg:text-6xl font-bold font-Poppins ${theme === 'dark' ? 'text-neutral-200' : 'text-neutral-80000'} mb-4`}>
                     Transforming ideas into interactive web experiences.
                 </h2>
                 <p className="text-base md:text-xl w-[80vw] md:w-[60vw] lg:w-[45vw] font-normal mb-12">

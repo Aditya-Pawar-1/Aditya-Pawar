@@ -1,6 +1,7 @@
 import React from 'react';
 import { GoLinkExternal } from 'react-icons/go';
 import Pageheading from './Pageheading';
+import { useTheme } from '../Context/ThemeContext';
 
 const handleClick = (platform) => {
     switch (platform.toLowerCase()) {
@@ -20,7 +21,9 @@ const handleClick = (platform) => {
 
 const cardClasses = 'rounded-xl h-[20vh] lg:h-[30vh] transition ease-in-out duration-[1s]';
 
-const Contact = ({ theme }) => {
+const Contact = () => {
+    const { theme } = useTheme();
+
     return (
         <>
             <div id='contact-section'>
