@@ -1,7 +1,7 @@
 import React from 'react';
 import { GoLinkExternal } from 'react-icons/go';
 import Pageheading from './Pageheading';
-import { useTheme } from '../Context/ThemeContext';
+import { useTheme } from '../context/ThemeContext';
 import Arrow from '../../public/Arrow.svg'
 
 const handleClick = (platform) => {

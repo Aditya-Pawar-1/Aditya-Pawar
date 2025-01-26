@@ -1,4 +1,4 @@
-import { useTheme } from '../Context/ThemeContext';
+import { useTheme } from '../context/ThemeContext';
 import Pageheading from './Pageheading';
 import ProjectCard from './Projectcard';
 const Project = () => {

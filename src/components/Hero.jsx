@@ -1,4 +1,4 @@
-import { useTheme } from '../Context/ThemeContext';
+import { useTheme } from '../context/ThemeContext';
 import Spline from '@splinetool/react-spline';
 
 const Hero = () => {

@@ -1,5 +1,5 @@
 import Navbar from "./Navbar"
-import { useTheme } from '../Context/ThemeContext';
+import { useTheme } from '../context/ThemeContext';
 import Hero from "./Hero";
 import Project from "./Project";
 import Contact from "./Contact";

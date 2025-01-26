@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { GoNorthStar } from "react-icons/go";
-import { useTheme } from '../Context/ThemeContext';
+import { useTheme } from '../context/ThemeContext';
 
 
 const Pageheading = ({ title, t1, t2 }) => {

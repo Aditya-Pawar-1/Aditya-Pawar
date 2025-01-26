@@ -1,4 +1,4 @@
-import { useTheme } from '../Context/ThemeContext';
+import { useTheme } from '../context/ThemeContext';
 
 const ProjectCard = ({ title, description, tags, path, pathMin }) => {
     const { theme } = useTheme();

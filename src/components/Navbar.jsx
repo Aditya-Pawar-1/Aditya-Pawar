@@ -1,6 +1,6 @@
 import { BsSun } from "react-icons/bs";
 import { FaMoon } from "react-icons/fa";
-import { useTheme } from '../Context/ThemeContext';
+import { useTheme } from '../context/ThemeContext';
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
