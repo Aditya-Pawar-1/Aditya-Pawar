@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ThemeContext from './ThemeContext';
 
 const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
     return (
         <ThemeContext.Provider value={{ theme, setTheme }}>

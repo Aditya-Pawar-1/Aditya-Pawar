@@ -1,5 +1,7 @@
 import { BsSun } from "react-icons/bs";
 import { FaMoon } from "react-icons/fa";
+import { CiMenuFries } from "react-icons/ci";
+import { AiOutlineClose } from "react-icons/ai";
 import { useTheme } from '../context/ThemeContext';
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -10,7 +12,8 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'))
+    localStorage.setItem('theme', theme);
   };
 
   const handleResume = () => {
@@ -51,29 +54,16 @@ const Navbar = () => {
             className={`menu flex w-[30px] h-[30px] flex-col items-center justify-center z-99 sm:hidden ${isMenuopen ? 'gap-0' : 'gap-1'}`}
             onClick={handleMenu}
           >
-            <motion.span
-              className="bg-white w-[25px] h-[2.5px] rounded-md"
-              animate={{
-                rotate: isMenuopen ? 45 : 0,
-              }}
-              transition={{ duration: 0.3 }}
-            ></motion.span>
-
-            <span className={`bg-white w-[25px] h-[2.5px] rounded-md ${isMenuopen ? 'hidden' : 'block'}`}></span>
-
-            <motion.span
-              className="bg-white w-[25px] h-[2.5px] rounded-md"
-              animate={{
-                rotate: isMenuopen ? -45 : 0,
-              }}
-              transition={{ duration: 0.3 }}
-            ></motion.span>
+          
+          {!isMenuopen 
+          ? <CiMenuFries size={'2em'} /> 
+          : <AiOutlineClose size={'2.5em'} />}
 
           </div>
 
           <button
             onClick={handleResume}
-            className="bg-gradient-to-r from-[#8E05C2] to-[#CD50FD] text-white text-base font-medium lg:font-semibold px-4 py-2 rounded hidden sm:block"
+            className="bg-gradient-to-r from-[#8E05C2] to-[#CD50FD] text-white text-base font-medium lg:font-semibold px-4 py-2 mr-4 rounded hidden sm:block"
           >
             Resume
           </button>
