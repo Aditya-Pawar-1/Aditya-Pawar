@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+    @font-face {
+        font-family: "Helvetica";
+        src: url(/fonts/Helvetica.woff) format('woff'), url(/fonts/Helvetica.woff2) format('woff2')
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        font-weight: 400;
+        src: url(/fonts/Poppins-Regular.woff) format('woff'), url(/fonts/Poppins-Regular.woff2) format('woff2')
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        font-weight: 400;
+        src: url(/fonts/Poppins-Bold.woff) format('woff'), url(/fonts/Poppins-Bold.woff2) format('woff2')
+    }
+
+    @font-face {
+        font-family: "JuliusSansOne";
+        font-weight: 400;
+        src: url(/fonts/JuliusSansOne-Regular.woff) format('woff'), url(/fonts/JuliusSansOne-Regular.woff2) format('woff2')
+    }
+
+    .font-Helvetica {
+        font-family: 'Helvetica', sans-serif;
+    }
+
+    .font-Poppins {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .font-JuliusSansOne {
+        font-family: 'JuliusSansOne', sans-serif;
+    }
+}
