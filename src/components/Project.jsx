@@ -1,6 +1,6 @@
 import { useTheme } from '../context/ThemeContext';
 import Pageheading from './Pageheading';
-import ProjectCard from './Projectcard';
+import ProjectCard from './ProjectCard';
 const Project = () => {
 
     const { theme } = useTheme();
