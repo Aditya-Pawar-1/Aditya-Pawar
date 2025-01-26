@@ -3,7 +3,7 @@ import { useTheme } from '../context/ThemeContext';
 const ProjectCard = ({ title, description, tags, path, pathMin }) => {
     const { theme } = useTheme();
     return (
-        <div className={`drop-shadow-xl mb-5 rounded-2xl shadow-md text-left flex lg:flex-row flex-col select-none mx-5 ${theme === 'dark' ? 'bg-[#1E1E1E]' : 'bg-[#BEBEFF]'}`}>
+        <div className={`drop-shadow-xl mb-10 rounded-2xl shadow-md text-left flex lg:flex-row flex-col select-none mx-5 ${theme === 'dark' ? 'bg-[#1E1E1E]' : 'bg-[#BEBEFF]'}`}>
             {/* big-screen Image */}
             <img 
                 src={path} 
@@ -19,8 +19,8 @@ const ProjectCard = ({ title, description, tags, path, pathMin }) => {
             />
 
             <div className='p-6'>
-                <h3 className="text-2xl md:text-4xl font-medium mb-4 font-Poppins">{title}</h3>
-                <p className="text-base md:text-lg mb-4 w-[95%] lg:w-[85%]">
+                <h3 className="text-2xl md:text-4xl font-bold mb-4 font-Poppins">{title}</h3>
+                <p className="text-base md:text-lg mb-4 w-[95%] lg:w-[85%] ">
                     {description}
                 </p>
                 <div className="flex gap-2 flex-wrap">

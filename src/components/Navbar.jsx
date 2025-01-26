@@ -17,10 +17,15 @@ const Navbar = () => {
     window.open('https://drive.google.com/file/d/1CCQc2CU_NW_v-4X6SdOZY1Cbs_V__-ie/view', '_blank');
   };
 
+  const handleMenu = () => {
+    window.scrollTo({ top: 0 });
+    setIsMenuopen(!isMenuopen)
+  }
+
   return (
-    <>
+    <div className={`w-screen ${isMenuopen ? 'fixed h-screen z-99' : 'block'}`}>
       <nav
-        className={`h-[20vh] w-full max-w-screen overflow-hidden flex items-center justify-between px-2 pt-6 pb-2 ${theme === 'dark' ? 'bg-[#0A0A0A] text-neutral-50' : 'bg-[#F3F3FF] text-neutral-950'}`}
+        className={`h-[20vh] w-full max-w-screen overflow-hidden flex items-center justify-between px-2 md:pt-6 pb-2 ${theme === 'dark' ? 'bg-[#0A0A0A] text-neutral-50' : 'bg-[#F3F3FF] text-neutral-950'}`}
       >
         <div className="flex items-center gap-24 md:pl-10 w-[70%]">
           <img src='/Logo.svg' alt="portfolio Website Logo" />
@@ -44,7 +49,7 @@ const Navbar = () => {
 
           <div
             className={`menu flex w-[30px] h-[30px] flex-col items-center justify-center z-99 sm:hidden ${isMenuopen ? 'gap-0' : 'gap-1'}`}
-            onClick={() => setIsMenuopen(!isMenuopen)}
+            onClick={handleMenu}
           >
             <motion.span
               className="bg-white w-[25px] h-[2.5px] rounded-md"
@@ -76,7 +81,7 @@ const Navbar = () => {
       </nav >
 
       <motion.div
-        className={`menuopen absolute z-99 w-full h-max flex flex-col items-center pt-12 text-xl gap-4 ${theme === 'dark' ? 'bg-[#0A0A0A] text-neutral-50' : 'bg-[#F3F3FF] text-neutral-950'}`}
+        className={`menuopen absolute z-99 w-full h-full flex flex-col items-center pt-12 text-xl gap-4 ${theme === 'dark' ? 'bg-[#0A0A0A] text-neutral-50' : 'bg-[#F3F3FF] text-neutral-950'}`}
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: isMenuopen ? '90vh' : 0, opacity: isMenuopen ? 1 : 0 }}
         transition={{ type: 'spring', stiffness: 200, damping: 25, duration: 2000 }}
@@ -93,7 +98,7 @@ const Navbar = () => {
           Resume
         </button>
       </motion.div>
-    </>
+    </div>
   );
 };
 
