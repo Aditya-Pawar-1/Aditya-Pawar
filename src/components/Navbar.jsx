@@ -54,10 +54,10 @@ const Navbar = () => {
             className={`menu flex w-[30px] h-[30px] flex-col items-center justify-center z-99 sm:hidden ${isMenuopen ? 'gap-0' : 'gap-1'}`}
             onClick={handleMenu}
           >
-          
-          {!isMenuopen 
-          ? <CiMenuFries size={'2em'} /> 
-          : <AiOutlineClose size={'2.5em'} />}
+
+            {!isMenuopen
+              ? <CiMenuFries size={'2em'} />
+              : <AiOutlineClose size={'2.5em'} />}
 
           </div>
 

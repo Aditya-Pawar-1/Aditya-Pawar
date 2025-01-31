@@ -20,13 +20,10 @@ const handleClick = (platform) => {
 };
 
 const Contact = () => {
-    const { theme } = useTheme();
-    const cardClasses = 'rounded-xl h-[20vh] lg:h-[30vh] transition ease-in-out duration-[1s]';
-
     return (
         <>
             <div id='contact-section'>
-                <Pageheading title={"Expolre Journey"} t1={"Design"} t2={"Development"} theme={theme} />
+                <Pageheading title={"Expolre Journey"} t1={"Design"} t2={"Development"} />
             </div>
 
             <div
@@ -83,7 +80,7 @@ const Contact = () => {
                     className="col-span-1 md:col-span-2 bg-[#008CD9] hover:scale-95 cursor-pointer transition ease-in-out duration-[1s] py-4 md:py-14 pl-4 md:pl-12 pr-4 rounded-xl "
 
                 >
-                    <h6 className='font-Poppins md:font-bold  text-base lg:text-lg'>
+                    <h6 className='font-Poppins md:font-bold pb-4 text-base lg:text-lg'>
                         Connect With Me On
                     </h6>
                     <div className='flex gap-2 sm:gap-5 font-Poppins text-5xl md:text-7xl lg:text-8xl'>
