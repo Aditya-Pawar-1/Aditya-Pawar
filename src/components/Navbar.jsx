@@ -13,7 +13,9 @@ const Navbar = () => {
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'))
-    localStorage.setItem('theme', theme);
+    localStorage.setItem('theme', theme === 'dark' ? 'light' : 'dark');
+    console.log(theme);
+    
   };
 
   const handleResume = () => {

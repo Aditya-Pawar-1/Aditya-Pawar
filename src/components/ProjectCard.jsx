@@ -25,16 +25,17 @@ const ProjectCard = ({ title, description, tags, path, live_link, Github, Behanc
             >
                 <section className="flex flex-col w-full h-full sm:flex-row relative">
                     <img
-                        src="/Project_Pattern.svg"
-                        alt="Pattern image"
-                        className="object-top object-contain"
+                        // src="/Project_Pattern.svg"
+                        src={path}
+                    alt="Pattern image"
+                    className="object-top object-contain"
                     />
                     <section className="Links space-y-4 absolute bottom-10 right-10 md:right-16 md:bottom-24">
                         {live_link && (
                             <a
                                 href={live_link}
                                 target="_blank"
-                                className="dark:bg-[#FEFEFF] px-6 py-3 dark:text-neutral-950 font-normal rounded-full font-Poppins flex gap-2"
+                                className="dark:bg-[#FEFEFF] bg-[#1E1E1E] px-6 py-3 dark:text-neutral-950 text-neutral-50 font-normal rounded-full font-Poppins flex gap-2 justify-center"
                             >
                                 Live Project
                                 <img src={`/Straight Arrow ${theme}.svg`} alt="Arrow Image" />
@@ -44,7 +45,7 @@ const ProjectCard = ({ title, description, tags, path, live_link, Github, Behanc
                             <a
                                 href={Github}
                                 target="_blank"
-                                className="dark:bg-[#FEFEFF] px-6 py-3 dark:text-neutral-950 font-normal rounded-full font-Poppins flex gap-2"
+                                className="dark:bg-[#FEFEFF] bg-[#1E1E1E] px-6 py-3 dark:text-neutral-950 text-neutral-50 font-normal rounded-full font-Poppins flex gap-2 justify-center"
                             >
                                 Github
                                 <img src={`/Straight Arrow ${theme}.svg`} alt="Arrow Image" />
@@ -54,7 +55,7 @@ const ProjectCard = ({ title, description, tags, path, live_link, Github, Behanc
                             <a
                                 href={Behance}
                                 target="_blank"
-                                className="dark:bg-[#FEFEFF] px-6 py-3 dark:text-neutral-950 font-normal rounded-full font-Poppins flex gap-2"
+                                className="dark:bg-[#FEFEFF] bg-[#1E1E1E] px-6 py-3 dark:text-neutral-950 text-neutral-50 font-normal rounded-full font-Poppins flex gap-2 justify-center"
                             >
                                 Behance
                                 <img src={`/Straight Arrow ${theme}.svg`} alt="Arrow Image" />

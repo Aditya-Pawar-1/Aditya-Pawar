@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <div
         data-theme={`${theme === 'dark' ? 'dark' : 'light'}`}
-        className={`relative dark:bg-[#0A0A0A] dark:text-neutral-50 bg-[#F3F3FF] text-neutral-950 max-w-screen-2xl mx-auto overflow-hidden transition-colors duration-500 ease-in-out`} >
+        className={`relative dark:bg-[#0A0A0A] dark:text-neutral-50 bg-[#F3F3FF] text-neutral-950 max-w-screen-2xl mx-auto overflow-hidden transition-colors duration-500 ease-in-out  select-none`} >
         <Loading />
         <Navbar />
         <Hero />

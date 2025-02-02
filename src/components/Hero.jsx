@@ -11,7 +11,7 @@ const Hero = () => {
                 <h1 className="text-xl md:text-2xl font-light font-Helvetica mb-2">
                     Hi, I'm Aditya Pawar
                 </h1>
-                <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold font-Poppins dark:text-neutral-200 text-neutral-800 mb-4">
+                <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold lg:leading-16 font-Poppins dark:text-neutral-200 text-neutral-800 mb-4">
                     Transforming ideas into interactive web experiences.
                 </h2>
                 <p className="text-base md:text-xl w-[80vw] md:w-[60vw] lg:w-[45vw] font-normal mb-12">

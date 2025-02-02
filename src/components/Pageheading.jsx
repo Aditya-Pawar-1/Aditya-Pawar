@@ -7,7 +7,7 @@ const Pageheading = ({ title, t1, t2 }) => {
 
     return (
         <>
-            <div className="container hidden lg:block ">
+            <div className="container hidden lg:block">
                 <div className='projectHeading w-[100vw] md:h-[40vh] lg:h-screen flex flex-col items-center justify-between p-12 lg:p-28'>
 
                     <div className='w-[75vw] h-1 bg-gradient-to-r from-[#8E05C2] to-[#CD50FD]'></div>
