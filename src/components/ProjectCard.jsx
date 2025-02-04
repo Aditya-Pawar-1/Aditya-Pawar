@@ -27,8 +27,8 @@ const ProjectCard = ({ title, description, tags, path, live_link, Github, Behanc
                     <img
                         // src="/Project_Pattern.svg"
                         src={path}
-                    alt="Pattern image"
-                    className="object-top object-contain"
+                        alt="Pattern image"
+                        className="object-top object-contain"
                     />
                     <section className="Links space-y-4 absolute bottom-10 right-10 md:right-16 md:bottom-24">
                         {live_link && (
