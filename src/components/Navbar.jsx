@@ -2,6 +2,7 @@ import { BsSun } from "react-icons/bs";
 import { FaMoon } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
+import { IoDocumentTextOutline } from "react-icons/io5";
 import { useTheme } from '../context/ThemeContext';
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -14,8 +15,6 @@ const Navbar = () => {
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'))
     localStorage.setItem('theme', theme === 'dark' ? 'light' : 'dark');
-    console.log(theme);
-    
   };
 
   const handleResume = () => {
@@ -36,9 +35,15 @@ const Navbar = () => {
           <img src='/Logo.svg' alt="portfolio Website Logo" />
 
           <div className="hidden md:block space-x-4 font-semibold text-xl">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/projects">Projects</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? "border-b-[#CD50FD] border-b-3 pb-1 transition-all ease-in delay-100 duration-1000" : ""
+            } to="/">Home</NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? "border-b-[#CD50FD] border-b-3 pb-1 transition-all ease-in delay-100 duration-1000" : ""
+            } to="/projects">Projects</NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? "border-b-[#CD50FD] border-b-3 pb-1 transition-all ease-in delay-100 duration-1000" : ""
+            } to="/contact">Contact</NavLink>
           </div>
         </div>
 
@@ -47,7 +52,7 @@ const Navbar = () => {
 
           <button
             onClick={() => toggleTheme()}
-            className={`w-10 h-10 sm:w-12 sm:h-12 p-2 flex items-center justify-center border rounded-full border-none text-white bg-gradient-to-r from-[#8E05C2] to-[#CD50FD]`}
+            className={`w-10 h-10 sm:w-12 sm:h-12 p-2 flex items-center justify-center border rounded-full border-none text-white bg-gradient-to-r from-[#8E05C2] to-[#CD50FD] cursor-pointer`}
           >
             {theme === 'dark' ? <BsSun size={"1.3em"} /> : <FaMoon size={"1.3em"} />}
           </button>
@@ -63,12 +68,16 @@ const Navbar = () => {
 
           </div>
 
-          <button
+          <motion.button
+            whileHover={{
+              scale: .9
+            }}
             onClick={handleResume}
-            className="bg-gradient-to-r from-[#8E05C2] to-[#CD50FD] text-white text-base font-medium lg:font-semibold px-4 py-2 mr-4 rounded hidden sm:block"
+            className="bg-gradient-to-r from-[#8E05C2] to-[#CD50FD] text-white text-base font-medium lg:font-semibold px-4 py-2 mr-4 rounded hidden sm:block md:flex items-center justify-center gap-2 cursor-pointer"
           >
+            <IoDocumentTextOutline size={'1.5em'} />
             Resume
-          </button>
+          </motion.button>
         </div>
       </nav >
 
@@ -85,8 +94,9 @@ const Navbar = () => {
 
         <button
           onClick={handleResume}
-          className="bg-gradient-to-r from-[#8E05C2] to-[#CD50FD] text-white text-base font-medium lg:font-semibold px-4 py-2 rounded"
+          className="bg-gradient-to-r from-[#8E05C2] to-[#CD50FD] text-white text-base font-medium lg:font-semibold px-4 py-2 rounded flex items-center justify-center gap-2"
         >
+          <IoDocumentTextOutline size={'1.4em'} />
           Resume
         </button>
       </motion.div>

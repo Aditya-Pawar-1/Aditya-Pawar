@@ -7,12 +7,15 @@ import { useTheme } from '../context/ThemeContext'
 const Pageheading = ({ title, t1, t2 }) => {
     const { theme } = useTheme();
     return (
-        <div data-scroll data-scroll-speed="0.2">
-            <motion.div className={`container hidden lg:block ${theme === 'dark' ? 'text-white border-white' : 'text-black border-black'}`}
-                        initial={{ scale: 0 }}
-                        whileInView={{ scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ type: 'spring', stiffness: 200, damping: 25, duration: 1, delay: 0.5 }}
+        <div>
+            <motion.div
+                data-scroll
+                data-scroll-speed="0.2"
+                className={`container hidden lg:block ${theme === 'dark' ? 'text-white border-white' : 'text-black border-black'}`}
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ type: 'spring', stiffness: 200, damping: 25, duration: 1, delay: 0.2 }}
             >
                 <div className='projectHeading w-[100vw] md:h-[40vh] lg:h-screen flex flex-col items-center justify-between p-12 lg:p-28'>
 

@@ -16,13 +16,13 @@ const Project = () => {
                 {Projects.map((data, index) => (
                     index <= 2 && <ProjectCard key={index} {...data} />
                 ))}
-            </div>
 
-            <div className='hidden mx-2 md:mx-16 lg:mx-32 xl:mx-24 lg:flex justify-end'>
-                <a href="/projects" className="dark:bg-[#FEFEFF] bg-[#1E1E1E] px-6 py-3 dark:text-neutral-950 text-neutral-50 font-normal rounded-full font-Poppins flex gap-2 justify-center w-fit">
-                    View More
-                    <img src={`/Straight Arrow ${theme}.svg`} alt="Arrow Image" />
-                </a>
+                <div className='mx-2 md:mx-16 lg:mx-32 xl:mx-24 flex justify-end'>
+                    <a href="/projects" className="dark:bg-[#FEFEFF] bg-[#1E1E1E] px-6 py-3 dark:text-neutral-950 text-neutral-50 font-normal rounded-full font-Poppins flex gap-2 justify-center w-fit">
+                        View More
+                        <img src={`/Straight Arrow ${theme}.svg`} alt="Arrow Image" />
+                    </a>
+                </div>  
             </div>
         </div>
     )

@@ -13,7 +13,7 @@ const ProjectPage = () => {
 
             <Navbar />
 
-            <div data-scroll data-scroll-speed="0.2" className='mx-2 md:mx-16 lg:mx-32 xl:mx-24 my-18'>
+            <div data-scroll data-scroll-speed="0.2" className='mx-2 md:mx-16 lg:mx-32 xl:mx-24 my-4'>
                 {Projects.map((data, index) => (
                     <ProjectCard key={index} {...data} />
                 ))}

@@ -21,8 +21,8 @@ const handleClick = (platform) => {
 
 const Contact = () => {
     return (
-        <>
-            <div id='contact-section'>
+        <div id='contact-section' className='pb-6'>
+            <div>
                 <Pageheading title={"Expolre Journey"} t1={"Design"} t2={"Development"} />
             </div>
 
@@ -71,8 +71,9 @@ const Contact = () => {
                     </h3>
                 </div>
 
-                <div className='hidden md:block  bg-[#FF0033] p-4 pl-6 hover:scale-105 rounded-xl transition ease-in-out duration-[1s] '>
-                    <img className='pl-4 pt-6 lg:scale-110 md:scale-150 md:pt-10 md:pl-2' src="/Arrow.svg" alt='Arrow Pointing towards Linkedin' />
+                <div className='hidden bg-[#FF0033] p-4 pl-6 md:flex items-center justify-center  hover:scale-105 rounded-xl transition ease-in-out duration-[1s] '>
+                    <iframe className='pl-4 rotate-135 pt-6 lg:scale-110 md:scale-150 md:pt-10 md:pl-2' src="https://lottie.host/embed/d3172bb1-8c52-444f-9171-c7947e5be7cd/3EA0zeP2XD.json" alt='Arrow Pointing towards Linkedin' />
+
                 </div>
 
                 <div
@@ -90,7 +91,7 @@ const Contact = () => {
                 </div>
 
             </div >
-        </>
+        </div>
     );
 };
 

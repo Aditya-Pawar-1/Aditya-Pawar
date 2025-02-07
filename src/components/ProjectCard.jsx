@@ -11,10 +11,11 @@ const ProjectCard = ({ title, description, tags, path, live_link, Github, Behanc
     }
 
     return (
-        <div
+        <motion.div
             data-theme={`${theme === 'dark' ? 'dark' : 'light'}`}
             className="relative overflow-hidden drop-shadow-xl mb-10 rounded-2xl shadow-md text-left flex lg:flex-row flex-col select-none mx-5 dark:bg-[#1E1E1E] bg-[#BEBEFF]"
-            onClick={handleClick}
+            onClick={handleClick} 
+            // whileHover={setShowCard(true)}
         >
             <motion.div
                 className={`absolute w-full h-full dark:bg-[#1E1E1E] bg-[#BEBEFF]`}
@@ -84,8 +85,11 @@ const ProjectCard = ({ title, description, tags, path, live_link, Github, Behanc
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
 export default ProjectCard;
+
+
+      
