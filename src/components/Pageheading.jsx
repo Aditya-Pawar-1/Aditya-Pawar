@@ -1,17 +1,23 @@
 import { motion } from 'framer-motion';
 import React from 'react'
 import { GoNorthStar } from "react-icons/go";
-import { useTheme } from '../context/ThemeContext'
+import Spline from '@splinetool/react-spline';
 
 
 const Pageheading = ({ title, t1, t2 }) => {
-    const { theme } = useTheme();
     return (
-        <div>
+        <div className='relative lg:my-12 z-1'>
+            <div className='absolute hidden lg:block bg-[#1A1A3D]'>
+                <Spline
+                    className='z-0 ml-20 scale-115'
+                    scene="https://prod.spline.design/SDH5mojxyQd5lZ57/scene.splinecode"
+                />
+            </div>
+
             <motion.div
                 data-scroll
                 data-scroll-speed="0.2"
-                className={`container hidden lg:block ${theme === 'dark' ? 'text-white border-white' : 'text-black border-black'}`}
+                className="container hidden lg:block text-white border-white"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}

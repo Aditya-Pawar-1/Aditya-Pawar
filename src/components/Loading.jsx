@@ -5,6 +5,9 @@ import '../loader.css'
 
 const Loading = () => {
     const { theme } = useTheme();
+    const handleStart = () => {
+        window.scrollTo({ top: 0 });
+    }
 
     return (
         <div data-theme={`${theme === 'dark' ? 'dark' : 'light'}`}>
@@ -12,7 +15,8 @@ const Loading = () => {
                 className="z-[999] w-screen min-h-screen absolute dark:bg-[#0A0A0A] bg-[#F3F3FF]"
                 aria-label="Loading Screen"
                 animate={{ y: '-100vh', display: 'none' }}
-                transition={{ delay: 2, duration: 0.5, ease: "easeIn" }}
+                transition={{ delay: 2, duration: 1.5, ease: "easeIn" }}
+                onAnimationStart={handleStart}
             >
                 <motion.div
                     className="h-2 rounded-full dark:bg-[#F3F3FF] bg-[#0A0A0A]"

@@ -22,7 +22,7 @@ const Project = () => {
                         View More
                         <img src={`/Straight Arrow ${theme}.svg`} alt="Arrow Image" />
                     </a>
-                </div>  
+                </div>
             </div>
         </div>
     )

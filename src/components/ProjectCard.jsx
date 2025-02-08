@@ -13,9 +13,8 @@ const ProjectCard = ({ title, description, tags, path, live_link, Github, Behanc
     return (
         <motion.div
             data-theme={`${theme === 'dark' ? 'dark' : 'light'}`}
-            className="relative overflow-hidden drop-shadow-xl mb-10 rounded-2xl shadow-md text-left flex lg:flex-row flex-col select-none mx-5 dark:bg-[#1E1E1E] bg-[#BEBEFF]"
+            className="relative overflow-hidden mb-10 rounded-2xl shadow-md text-left flex lg:flex-row flex-col select-none mx-5 dark:bg-[#1E1E1E] bg-[#BEBEFF] dark:shadow-[#525252]"
             onClick={handleClick} 
-            // whileHover={setShowCard(true)}
         >
             <motion.div
                 className={`absolute w-full h-full dark:bg-[#1E1E1E] bg-[#BEBEFF]`}
@@ -26,7 +25,6 @@ const ProjectCard = ({ title, description, tags, path, live_link, Github, Behanc
             >
                 <section className="flex flex-col w-full h-full sm:flex-row relative">
                     <img
-                        // src="/Project_Pattern.svg"
                         src={path}
                         alt="Pattern image"
                         className="object-top object-contain"

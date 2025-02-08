@@ -50,12 +50,14 @@ const Navbar = () => {
 
         <div className="flex items-center justify-end pr-2 gap-4 w-[30%]">
 
-          <button
+          <motion.button
+            whileHover={{ rotate: "360deg", scale: 1.2 }}
+            transition={{ duration: 1 }}
             onClick={() => toggleTheme()}
             className={`w-10 h-10 sm:w-12 sm:h-12 p-2 flex items-center justify-center border rounded-full border-none text-white bg-gradient-to-r from-[#8E05C2] to-[#CD50FD] cursor-pointer`}
           >
             {theme === 'dark' ? <BsSun size={"1.3em"} /> : <FaMoon size={"1.3em"} />}
-          </button>
+          </motion.button>
 
           <div
             className={`menu flex w-[30px] h-[30px] flex-col items-center justify-center z-99 sm:hidden ${isMenuopen ? 'gap-0' : 'gap-1'}`}
